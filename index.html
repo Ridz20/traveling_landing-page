@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Jadoo</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div class="hero">
+        <nav>
+            <div class="header">
+                <div class="logo"><img src="assets/Logo.png" alt=""></div>
+                <div class="nav-menu-btn" id="menu_btn">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+            <ul class="menu-links" id="menu_links">
+                <li><a href="">Destinations</a></li>
+                <li><a href="">Hotels</a></li>
+                <li><a href="">Flights</a></li>
+                <li><a href="">Bookings</a></li>
+                <li><a href="">Login</a></li>
+                <li><a href="" class="sign-up">Sign Up</a></li>
+                <li class="language-select">
+                    <select id="language-selector">
+                        <option value="EN" selected>EN</option>
+                        <option value="FR">FR</option>
+                        <option value="ES">ES</option>
+                        <option value="DE">DE</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- HERO -->
+        <header class="section-container header-container" id="home">
+            <div class="header-image">
+                <img src="assets/plane.png" alt="plane" class="airplane-icon airplane-1">
+                <img src="assets/plane.png" alt="plane" class="airplane-icon airplane-2">
+                <img src="assets/Traveller.png" alt="header">
+            </div>
+            <div class="header-content">
+                <h3 class="section-subheader">BEST DESTINATIONS AROUND THE WORLD</h3>
+                <h1>Travel, enjoy and live a new and full life</h1>
+                <p>
+                    Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed
+                    listening. Park gate sell they west hard for the.
+                </p>
+                <div class="header-btns">
+                    <button class="btn">Find out more</button>
+                    <a href="#">
+                        <span><i class="ri-play-fill"></i></span>Play Demo
+                    </a>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!-- CATEGORY -->
+    <section class="section-container service-container" id="service">
+        <div class="service-header">
+            <h3 class="section-subheader">CATEGORY</h3>
+            <p class="section-header">We Offer Best Services</p>
+
+            <div class="service-bg-image">
+                <img src="assets/plus-group.png" alt="">
+            </div>
+        </div>
+        <div class="service-grid">
+            <div class="service-card">
+                <img src="./assets/weather.png" alt="service">
+                <h4>Calculated Weather</h4>
+                <p>Built Wicket longer admire do barton vanity itself do in it.</p>
+            </div>
+            <div class="service-card">
+                <img src="./assets/Group.png" alt="service" class="flights">
+                <h4>Best Flights</h4>
+                <p>Engrossed listening. Park gate sell they west hard for the.</p>
+            </div>
+            <div class="service-card">
+                <img src="./assets/mic.png" alt="service">
+                <h4>Local Events</h4>
+                <p>Barton vanity itself do in it. Preferd to men it engrossed listening. </p>
+            </div>
+            <div class="service-card">
+                <img src="./assets/settings.png" alt="service">
+                <h4>Customization</h4>
+                <p>We deliver outsourced aviation services for military customers</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- DESTINATIONS -->
+    <section class="section-container destination-container" id="destination">
+        <h3 class="section-subheader">Top Selling</h3>
+        <h2 class="section-header">Top Destinations</h2>
+        <div class="destination-grid">
+            <div class="destination-card">
+                <img src="assets/destination-1.jpg" alt="destination" />
+                <div class="destination-details">
+                    <div>
+                        <h4>Rome, Italy</h4>
+                        <h4>$5.42k</h4>
+                    </div>
+                    <p>
+                        <span><i class="ri-navigation-fill"></i></span>
+                        10 Days Trip
+                    </p>
+                </div>
+            </div>
+            <div class="destination-card">
+                <img src="assets/destination-2.jpg" alt="destination" />
+                <div class="destination-details">
+                    <div>
+                        <h4>London, UK</h4>
+                        <h4>$4.2k</h4>
+                    </div>
+                    <p>
+                        <span><i class="ri-navigation-fill"></i></span>
+                        12 Days Trip
+                    </p>
+                </div>
+            </div>
+            <div class="destination-card">
+                <img src="assets/destination-3.jpg" alt="destination" />
+                <div class="destination-details">
+                    <div>
+                        <h4>Full Europe</h4>
+                        <h4>$15k</h4>
+                    </div>
+                    <p>
+                        <span><i class="ri-navigation-fill"></i></span>
+                        28 Days Trip
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRIPS -->
+    <section class="section-container trip-container" id="trip">
+        <div class="trip-content">
+            <h3 class="section-subheader">EASY & FAST</h3>
+            <h2 class="section-header">Book Your Next Trip In 3 Easy Steps</h2>
+            <ul class="trip-list">
+                <li>
+                    <span><img src="assets/selection.png" alt="destination-1"></span>
+                    <div>
+                        <h4>Choose Destination</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Urna, tortor tempus.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <span><img src="assets/water-sport.png" alt="destination-2"></span>
+                    <div>
+                        <h4>Make Payment</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Urna, tortor tempus.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <span><img src="assets/car.png" alt="destination-3"></span>
+                    <div>
+                        <h4>Reach Airport on Selected Date</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Urna, tortor tempus.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="trip-card">
+            <div class="rome-mini-card">
+                <div class="mini-card-header">
+                    <img src="assets/mini-trip.png" alt="Rome" class="mini-card-avatar">
+                    <div class="mini-card-text">
+                        <div class="mini-card-status">Ongoing</div>
+                        <div class="mini-card-title">Trip to Rome</div>
+                    </div>
+
+                </div>
+                <div class="progress-text">40% completed</div>
+                <div class="progress-container">
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+            <div class="trip-card-wrapper">
+                <div class="trip-image">
+                    <img src="assets/trip.jpg" alt="Greece">
+                </div>
+                <div class="trip-card-content">
+                    <h4>Trip To Greece</h4>
+                    <p>14-29 June | by Robbin joseph</p>
+
+                    <div class="trip-card-icons">
+                        <div class="icon-circle"><img src="assets/leaf.png" alt=""></div>
+                        <div class="icon-circle"><img src="assets/map.png" alt=""></div>
+                        <div class="icon-circle"><img src="assets/send.png" alt=""></div>
+                    </div>
+
+                    <div class="trip-card-footer">
+                        <div class="people-count">
+                            <img src="assets/building.png" alt="building">
+                            <span>24 people going</span>
+                        </div>
+                        <div class="heart-icon" onclick="toggleHeart(this)">
+                            <i class="ri-heart-line"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- TESTIMONIALS -->
+    <section class="section-container client-container" id="client">
+        <div class="client-content">
+            <h3 class="section-subheader">TESTIMONIALS</h3>
+            <h2 class="section-header">What People Say About Us</h2>
+
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="client-swiper">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="client-card">
+                            <img src="assets/testinomial-1.png" alt="client" />
+                            <div class="client-card-content">
+                                <p>“On the Windows talking painted pasture yet its express parties use. Sure last upon
+                                    he same as knew next. Of believed or diverted no.”</p>
+                                <h4>Mike taylor</h4>
+                                <h5>Lahore, Pakistan</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="client-card">
+                            <img src="assets/testinomial-1.png" alt="client" />
+                            <div class="client-card-content">
+                                <p>“On the Windows talking painted pasture yet its express parties use. Sure last upon
+                                    he same as knew next. Of believed or diverted no.”</p>
+                                <h4>Mike taylor</h4>
+                                <h5>Lahore, Pakistan</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="client-card">
+                            <img src="assets/testinomial-1.png" alt="client" />
+                            <div class="client-card-content">
+                                <p>“On the Windows talking painted pasture yet its express parties use. Sure last upon
+                                    he same as knew next. Of believed or diverted no.”</p>
+                                <h4>Mike taylor</h4>
+                                <h5>Lahore, Pakistan</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PARTNERS -->
+    <section class="section-container partner-container" id="partner">
+        <div class="partner-section">
+            <img src="assets/partner-1.png" alt="partner-1">
+            <img src="assets/partner-2.png" alt="partner-2">
+            <img src="assets/partner-3.png" alt="partner-3">
+            <img src="assets/partner-4.png" alt="partner-4">
+            <img src="assets/partner-5.png" alt="partner-5">
+        </div>
+    </section>
+
+    <!-- SUBSCRIBER -->
+    <section class="section-container subscriber-container" id="subscriber-card">
+        <div class="subscriber-card">
+            <div class="send-icon"><img src="assets/send-circle.png" alt=""></div>
+            <div class="background-circle circle-1"><img src="assets/top-circle.png" alt=""></div>
+            <div class="background-circle circle-2"><img src="assets/top-circle.png" alt=""></div>
+            <div class="card-content">
+                <h2 class="card-title">Subscribe to get information, latest news and other interesting offers about
+                    Jadoo</h2>
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <div class="email-icon">
+                            <i class="ri-mail-line"></i>
+                        </div>
+                        <input type="email" placeholder="Your email">
+                    </div>
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="section-container footer-container" id="footer">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <a href="#" class="logo">Jad<span>oo</span>.</a>
+                </div>
+                <p>
+                    Book your trip in minute, get full
+                    Control for much longer.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul class="footer-links">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Mobile</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Help/FAQ</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Affiliates</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>More</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Airlinefees</a></li>
+                    <li><a href="#">Airline</a></li>
+                    <li><a href="#">Low fare tips</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <ul class="footer-socials">
+                    <li>
+                        <a href="#"><img src="assets/facebook.png" alt="facebook" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/instagram.png" alt="instagram" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/twitter.png" alt="twitter" /></a>
+                    </li>
+                </ul>
+                <h5>Discover our app</h5>
+                <div class="footer-discover">
+                    <a href="#"><img src="assets/google-play.png" alt="Google Play" /></a>
+                    <a href="#"><img src="assets/play-store.png" alt="Play Store" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bar">
+            All rights reserved@jadoo.co
+        </div>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
