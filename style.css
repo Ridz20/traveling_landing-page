@@ -166,7 +166,7 @@ nav {
   color: var(--text-light);
   text-align: center;
   font-weight: 400;
-  padding-right: 30px;
+  padding-right: 5px;
 }
 .header-btns {
   display: flex;
