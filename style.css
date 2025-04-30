@@ -48,7 +48,7 @@ nav {
   width: 100%;
   max-width: var(--max-width);
   margin-inline: auto;
-  z-index: 9;
+  z-index: 999;
 }
 .header {
   padding: 1rem;
@@ -252,8 +252,6 @@ nav {
 }
 .service-header {
   position: relative;
-  padding-right: 10px;
-  z-index: 10;
 }
 .service-bg-image {
   position: absolute;
@@ -321,6 +319,7 @@ nav {
   overflow: hidden;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
 }
+
 .destination-details {
   padding: 1rem 1.5rem;
 }
@@ -456,13 +455,14 @@ nav {
 /* Mini Card */
 .rome-mini-card {
   position: absolute;
-  top: 14rem;
-  left: 12rem;
+  bottom: 5rem;
+  right: -1rem;
   background: var(--white);
   border-radius: 12px;
   padding: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  z-index: 10;
+  z-index: 1;
+  width: 50%;
 }
 .mini-card-header {
   display: flex;
@@ -482,19 +482,20 @@ nav {
   object-fit: cover;
 }
 .mini-card-title {
-  font-size: 14px;
+  font-size: 11px;
   font-weight: 600;
+  white-space: nowrap;
 }
 .mini-card-status {
-  font-size: 12px;
+  font-size: 10px;
 }
 .progress-container {
   background-color: #e6e9ff;
   height: 6px;
   border-radius: 3px;
   margin-top: 5px;
-  margin-left: 2rem;
-  width: 80%;
+  margin-left: 3.6rem;
+  width: 56%;
 }
 .progress-bar {
   background-color: #8a94ff;
@@ -507,9 +508,10 @@ nav {
 }
 .progress-text {
   color: #666;
-  font-size: 12px;
+  font-size: 10px;
   margin-top: 4px;
-  text-align: right;
+  padding-left: 60px;
+  white-space: nowrap;
 }
 .trip-card-icons {
   display: flex;
@@ -535,7 +537,6 @@ nav {
 }
 .swiper-pagination {
   display: flex;
-  justify-content: center;
   gap: 10px;
   width: 100%;
   margin-top: 3rem;
@@ -560,25 +561,7 @@ nav {
 .client-content {
   position: relative;
 }
-.swiper-pagination {
-  margin-top: 30rem;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 8px;
-}
-.swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
-  background-color: #999;
-  opacity: 0.5;
-  border-radius: 50%;
-  transition: all 0.3s ease;
-}
-.swiper-pagination-bullet-active {
-  background-color: #000;
-  opacity: 1;
-}
+
 .swiper {
   overflow: hidden;
   height: auto;
@@ -624,16 +607,16 @@ nav {
 }
 
 /* PARTNER STYLES */
+
 .partner-section {
   display: flex;
-  flex-direction: column;
-}
-.partner-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  justify-content: space-between;
   align-items: center;
   gap: 2rem;
+  scrollbar-width: none;
 }
 .partner-container img {
   max-width: 100%;
@@ -642,6 +625,7 @@ nav {
   max-height: 40px;
   object-fit: contain;
 }
+
 .partner-section img:nth-child(1) {
   filter: grayscale(1);
   max-height: 80px;
@@ -658,7 +642,7 @@ nav {
 }
 .partner-section img:nth-child(4) {
   filter: grayscale(1);
-  margin-bottom: 1rem;
+
   max-height: 80px;
   max-width: 80px;
 }
@@ -788,70 +772,69 @@ button:hover {
 .footer-container {
   display: grid;
   gap: 2rem;
-  margin-top: 5rem;
 }
 .footer-logo {
   font-size: 44px;
-  letter-spacing: 1px;
-  font-family: "Poppins";
-  color: var(--text-main);
   font-weight: 500;
+  font-family: "Poppins";
 }
 .footer-col p {
   margin-top: 1rem;
-  color: var(--text-gray);
-  font-size: 14px;
-  font-family: "Poppins";
+  color: var(--text-light);
 }
+
 .footer-col h4 {
-  margin-top: 1rem;
   margin-bottom: 1.5rem;
   font-size: 1.2rem;
   font-weight: 500;
   color: var(--text-dark);
-  text-align: center;
 }
+
 .footer-links {
   display: grid;
   gap: 1rem;
-  text-align: center;
 }
+
 .footer-links a {
   font-weight: 500;
   color: var(--text-light);
 }
+
 .footer-links a:hover {
-  color: var(--white);
-  background-color: var(--primary-color);
+  color: var(--primary-color);
 }
+
 .footer-socials {
-  margin-top: 1.3rem;
   margin-bottom: 2rem;
   display: flex;
+  align-items: center;
   gap: 1rem;
-  justify-content: center;
 }
+
 .footer-socials a {
-  text-align: center;
+  padding: 8px 12px;
+  font-size: 1.25rem;
+  color: var(--text-dark);
 }
+
 .footer-col h5 {
   margin-bottom: 1rem;
-  margin-top: -2rem;
-  text-align: center;
   font-size: 1.1rem;
   font-weight: 500;
   color: var(--text-light);
 }
+
 .footer-discover {
   display: flex;
   align-items: center;
   gap: 1rem;
-  justify-content: center;
 }
+
 .footer-discover img {
   max-width: 120px;
   border-radius: 1rem;
 }
+
 .footer-bar {
   padding: 1rem;
   font-size: 0.9rem;
@@ -863,6 +846,7 @@ button:hover {
   .service-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .destination-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -990,14 +974,8 @@ button:hover {
     text-align: left;
   }
   .rome-mini-card {
-    position: absolute;
-    top: 14rem;
-    left: 13rem;
-    background: white;
-    border-radius: 12px;
-    padding: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    z-index: 10;
+    width: 60%;
+    height: 28%;
   }
   .mini-card-header {
     display: flex;
@@ -1048,7 +1026,7 @@ button:hover {
   .swiper-pagination {
     justify-content: flex-start;
     margin-left: 0;
-    margin-top: 8rem;
+    margin-top: 7rem;
     gap: 15px;
   }
   .swiper-pagination-bullet {
@@ -1103,24 +1081,26 @@ button:hover {
     height: 120px;
   }
   .footer-container {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
+
   .footer-col:nth-child(4) {
     grid-area: unset;
-  }
-  .footer-col h5 {
-    margin-top: -2rem;
-    margin-left: 28px;
-  }
-  .footer-col .footer-discover {
-    margin-left: 24px;
   }
 }
 
 @media (max-width: 767px) {
+  .destination-card img {
+    height: 320px;
+    object-fit: cover;
+    width: 100%;
+  }
+  .client-card {
+    margin-top: 20px;
+  }
   .swiper-pagination {
-    justify-content: center;
-    margin-bottom: 20px;
+    justify-content: end;
+    margin-top: 10rem;
   }
   .swiper-pagination-bullet {
     width: 12px !important;
@@ -1171,15 +1151,9 @@ button:hover {
     padding-right: 3rem;
   }
   .rome-mini-card {
-    position: absolute;
+    right: -30px;
+    left: auto;
     top: 14rem;
-    right: -15px;
-    background: white;
-    border-radius: 12px;
-    padding: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    max-width: 11vw;
-    height: 12vh;
     z-index: 10;
   }
   .mini-card-header {
@@ -1203,8 +1177,8 @@ button:hover {
     height: 6px;
     border-radius: 3px;
     margin-top: 5px;
-    margin-left: 2rem;
-    width: 80%;
+    margin-left: 3.7rem;
+    width: 70%;
   }
   .progress-bar {
     background-color: #8a94ff;
@@ -1216,8 +1190,9 @@ button:hover {
     color: #666;
     font-size: 12px;
     margin-top: 4px;
-    text-align: right;
+    margin-right: -0.1rem;
   }
+
   .partner-section {
     justify-content: space-evenly;
     gap: 7rem;
@@ -1251,5 +1226,8 @@ button:hover {
   }
   .email-icon {
     font-size: 19px;
+  }
+  .swiper-pagination {
+    margin-right: -10px;
   }
 }
